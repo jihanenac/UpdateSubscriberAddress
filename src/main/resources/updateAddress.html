@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Page Object Model</title>
+    <style type="text/css">
+        #addressUpdate{
+            margin:30vh 40vw;
+        }
+        input{
+            display: block;
+            margin-top: 1vh;
+            margin-bottom: 1vh;
+        }
+    </style>
+</head>
+<body>
+
+    <div id ="addressUpdate">
+        Your New Address:<input id="address" type ="text"/>
+        
+        <input id="update-btn" type="submit" value="Update Address"/>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("update-btn").addEventListener("click", addressUpdate);
+    </script>
+</body>
+</html>
